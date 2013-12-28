@@ -1,0 +1,262 @@
+<?
+	$count = file("count.txt");
+	$count = chop($count[0]);
+	if(!$ip)
+	{
+		$count++;
+		$fp = fopen("count.txt", "w");
+		fwrite($fp, "$count");
+		fclose($fp);
+
+		SetCookie("ip", $REMOTE_ADDR);
+	}
+?>
+
+<HTML>
+<HEAD>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<style type="text/css">
+	<!--
+	body{
+		margin-top :0px;
+		margin-left:0px;
+		font-size: 14px;
+		font-style: normal;
+		line-height: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		color: #000000;
+	}
+	td{
+		font-size: 14px;
+		font-style: normal;
+		line-height: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		color: #000000;
+	}
+	.normal {
+		font-size: 15px;
+	}
+	.xbig {
+		font-size: 25px;
+	}
+	.big {
+		font-size: 17px;
+	}
+	.small {
+		font-size: 12px;
+	}
+
+	.vsmall {
+		font-size: 10px;
+	}
+
+	.white {
+		color: #FFFFFF;
+	}
+	.red {
+		color: #FF0000;
+	}
+	.blue {
+		color: #0000FF;
+	}
+
+	-->
+	</style>
+
+	<script language="JavaScript">
+	<!--
+
+	function schedule_onoff(){
+		if (document.getElementById("LayerSummer").style.visibility == 'hidden'){
+			document.getElementById("LayerSummer").style.visibility = 'visible';
+		} else {
+			document.getElementById("LayerSummer").style.visibility = 'hidden';
+		}
+	}
+
+	-->
+	</script>
+
+
+	<TITLE>SOS Dan web site</TITLE>
+</HEAD>
+
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<div id="Layer1" style="position:absolute; width:800px; height:1000px; z-index:0; border: 1px none #000000; left: 0px; top: 0px">
+<TABLE border=0 width=800 cellspacing=3 cellpadding=3 align=left>
+	<TR>
+		<TD align=center valign=middle>
+		당신은
+		<font style="background:#000000; color:#ffffff; font-weight: bold;"><? echo($count); ?></font>
+		번째 방문자입니다.<br><br>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD align=center valign=middle>
+		<img src="sostitle.jpg" width=450 height=60>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD align=center valign=middle>
+		<img src="zozlogo.jpg" width=200 height=247>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD align=center valign=middle class="xbig">
+		<br>
+		입구<br>
+		<br>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD align=center valign=middle>
+		<br>
+		메일은 이쪽으로부터 →
+		<img src="post_no.jpg" width=40 height=40 border=0><br>
+		<br>
+		</TD>
+	</TR>
+
+
+	<TR>
+		<TD align=center valign=middle>
+		<br>
+		활동 계획 <br>
+		<a href="#" onclick="schedule_onoff()">여름 방학 계획! 지각 엄금</a>
+		<br>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD align=center valign=middle class="small">
+		<br>
+		이 홈페이지는 1024x768 픽셀 이상의 브라우저에서 편안하게보실 수 있습니다. <br>
+		작은 글씨 크기를 권장합니다. <br>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD align=center valign=middle><hr width="90%">
+		</TD>
+	</TR>
+
+	<TR>
+		<TD align=center valign=top>
+		<TABLE border=0 width="660" cellspacing=0 cellpadding=0 align=center>
+			<TR>
+				<TD align=center valign=bottom>
+					<a href="http://www.haruhi.tv/fanclub/"><IMG SRC="img/fanclub.jpg" border=0 ></a>　
+				</TD>
+				<TD align=center valign=bottom>
+					<a href="http://www.kyotoanimation.co.jp/haruhi/index.html" target="_blank"><IMG SRC="fanclub/img/banner_kyoani_haruhi.jpg" border=0 ></a>
+				</TD>
+				<TD align=center valign=bottom>
+					<span class="vsmall ">2010.7.31 업데이트(BD-BOX 자켓)</span><br>
+					<a href="http://www.haruhi.tv/haruchuru/"><IMG SRC="img/harucyuru.jpg" border=0 ></a>　
+				</TD>
+			</TR>
+		<TABLE border=0 width=800 cellspacing=3 cellpadding=3 align=center>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD align=center valign=middle>
+			　<a href="http://www.kyotoanimation.co.jp/haruhi/movie/index.html" target="_blank"><IMG SRC="fanclub/img/banner_kyoani_haruhimov.gif" border=0 ></a>
+		</TD>
+	</TR>
+
+	<TR>
+		<TD>
+			<IMG src="img/copy.jpg" width=800 height=48>
+		</TD>
+	</TR>
+</TABLE>
+</div>
+
+<div id="LayerSummer" style="position:absolute; width:400px; height:300px; z-index:8; background-image: url(img2011/noteback.gif); layer-background-image: url(img2011/noteback.gif); border: 1px none #000000; dotted #555; left: 200px; top: 280px; visibility: hidden;">
+  <table width="400" height="300" border="0" cellspacing="0" cellpadding="1" valign="top" onclick="schedule_onoff()">
+    <tr>
+      <td width="400" height="20"><span class="small"><br></span></td>
+    </tr>
+    <tr>
+      <td width="400" height="30" align="center" valign="middle">
+      <font class="normal">
+      <b>○『여름 방학 동안하지 않으면 안되는 것』<br>
+      </b></font>
+      </td>
+    </tr>
+    <tr>
+      <td width="400" align="center" valign="top">
+        <table width="300" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="200" align="left" valign="middle"><b class="small">· 하계 합숙.</b></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><b class="small">· 수영장.</b></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><b class="small">· 여름 축제.</b></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><font class="small"><b>· 불꽃놀이.</b></font></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><font class="small"><b>· 아르바이트.</b></font></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><font class="small"><b>· 천체 관측.</b></font></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><font class="small"><b>· 배팅 연습.</b></font></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><font class="small"><b>· 곤충 채집.</b></font></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><font class="small"><b>· 담력 시험.</b></font></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><font class="small"><b>· 기타.</b></font></td>
+            <td width="100"></td>
+          </tr>
+          <tr>
+            <td colspan="2" height="5"><img src="./img/spacer.gif" height="5"></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><font class="small"><b>· 금붕어 잡기.</b></font></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><font class="small"><b>· 망둥이 낚시 대회.</b></font></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+          <tr>
+            <td width="200" align="left" valign="middle"><font class="small"><b>· 숙제.</b></font></td>
+            <td width="100" align="left" valign="middle"><b class="mark">　×</b></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</BODY>
+</HTML>
