@@ -1,4 +1,4 @@
-<?
+<?php
 	$count = file("count.txt");
 	$count = chop($count[0]);
 	if(!$ip)
@@ -92,7 +92,7 @@
 	<TR>
 		<TD align=center valign=middle>
 		당신은
-		<font style="background:#000000; color:#ffffff; font-weight: bold;"><? echo($count); ?></font>
+		<font style="background:#000000; color:#ffffff; font-weight: bold;"><?php echo($count); ?></font>
 		번째 방문자입니다.<br><br>
 		</TD>
 	</TR>
